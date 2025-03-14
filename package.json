@@ -36,10 +36,12 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
+    "bullmq": "^5.42.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "ioredis": "^5.6.0",
-    "res-express": "^1.0.4"
+    "res-express": "^1.0.4",
+    "uuid": "^11.1.0"
   }
 }

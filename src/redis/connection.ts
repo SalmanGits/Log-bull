@@ -1,6 +1,6 @@
 
 import Redis from 'ioredis';
-import { redisOptions } from '../config/redis.config';
+import { redisOptions } from '../config/redis.config'
 
 
 
