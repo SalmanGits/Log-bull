@@ -3,9 +3,6 @@ import Redis from 'ioredis';
 import { redisOptions } from '../config/redis.config'
 
 
-
-
-
 const redis = new Redis(redisOptions);
 
 redis.on('connect', () => {

@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import Database from "../db/db"
+
 import errorHandler from "../middleware/errorHandler"
 
 class App {
@@ -12,7 +12,6 @@ class App {
 
     }
     mountRoutes() {
-     
         this.app.use(errorHandler as any)
 
     }
@@ -23,7 +22,6 @@ class App {
     }
     start(port: number) {
         this.app.listen(port, () => {
-            Database.connect()
             console.log(`Server started at http://localhost:${port}`)
         })
     }

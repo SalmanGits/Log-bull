@@ -2,9 +2,6 @@
 import { Queue } from 'bullmq';
 import redis from '../redis/connection'
 
-
-
-
 export const logProcessingQueue = new Queue('log-processing-queue', {
   connection: redis,
   defaultJobOptions: {
